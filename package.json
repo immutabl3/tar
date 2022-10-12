@@ -1,6 +1,6 @@
 {
   "name": "@immutabl3/tar",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "browser-oriented tarball manipulation",
   "main": "src/index.js",
   "type": "module",
