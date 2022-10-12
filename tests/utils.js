@@ -14,8 +14,8 @@ export const generateTar = async function() {
   // generate a tarball and read it back
   const writer = tar();
   writer.addFolder('myfolder/');
-  writer.addTextFile('myfolder/first.txt', 'this is some text 🙂');
-  writer.addTextFile('myfolder/second.txt', 'some more text with 🙃 emojis');
+  writer.addText('myfolder/first.txt', 'this is some text 🙂');
+  writer.addText('myfolder/second.txt', 'some more text with 🙃 emojis');
   const result = await writer.write();
   return untar(result);
 };

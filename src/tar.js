@@ -135,7 +135,7 @@ export default function tar() {
 
 
   return {
-    addTextFile(name, text, opts) {
+    addText(name, text, opts) {
       const te = new TextEncoder();
       const arr = te.encode(text);
       fileData.push({
@@ -148,7 +148,7 @@ export default function tar() {
       });
     },
 
-    addFileArrayBuffer(name, arrayBuffer, opts) {
+    addArrayBuffer(name, arrayBuffer, opts) {
       const arr = new Uint8Array(arrayBuffer);
       fileData.push({
         name,
