@@ -1,10 +1,15 @@
 # tar
 
-a fast, browser-oriented tarball manipulation with zero dependencies
+fast, browser-oriented tarball manipulation with zero dependencies
 
 ## why?
 
-this is a port of [tarballjs](https://github.com/ankitrohatgi/tarballjs), which was failing in Next.js/modern build systems, both because of a lack of proper UMD and node support. The project structure also doesn't support tree-shaking 
+this is a rewrite of [tarballjs](https://github.com/ankitrohatgi/tarballjs). enhancements:
+- fixes imports by using esmodules
+- works in node
+- allows tree-shaking 
+- smaller bundle size
+- better developer experience
 
 ## usage
 
